@@ -34,7 +34,7 @@ public class TasksController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(TaskItem task)
+    public async Task<IActionResult> Create([FromBody] TaskItem task)
     {
         var created = await _service.CreateAsync(task);
 
@@ -42,7 +42,7 @@ public class TasksController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> Update(int id, TaskItem task)
+    public async Task<IActionResult> Update(int id, [FromBody] TaskItem task)
     {
         var updated = await _service.UpdateAsync(id, task);
 

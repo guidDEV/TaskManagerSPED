@@ -1,0 +1,29 @@
+.header {
+  height: 70px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+/* search */
+.search-wrapper {
+  width: 300px;
+}
+
+.search-wrapper input {
+  border-radius: 20px;
+  padding-left: 14px;
+}
+
+/* avatar */
+.avatar {
+  width: 36px;
+  height: 36px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

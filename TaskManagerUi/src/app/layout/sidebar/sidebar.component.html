@@ -1,0 +1,35 @@
+<aside class="sidebar d-flex flex-column">
+
+  <!-- LOGO -->
+  <div class="logo px-3 py-4">
+    <h5 class="m-0 fw-bold">TaskManager</h5>
+    <small class="text-muted">Dashboard</small>
+  </div>
+
+  <nav class="nav flex-column px-2 gap-1">
+
+    <a
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="nav-link">
+
+      📋 <span>Tasks</span>
+    </a>
+
+    <a
+      routerLink="/new"
+      routerLinkActive="active"
+      class="nav-link">
+
+      ➕ <span>New Task</span>
+    </a>
+
+  </nav>
+
+  <div class="mt-auto p-3 small text-muted">
+    <div>Angular 21 + .NET 8</div>
+    <div>Pedro Franco</div>
+  </div>
+
+</aside>

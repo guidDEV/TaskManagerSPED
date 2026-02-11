@@ -34,6 +34,11 @@ cd TaskManagerSPED/TaskManagerUi
 ```
 
 ### 4. On API Project run:
+To create local DB:
+```bash
+dotnet ef database update
+```
+To run application:
 ```bash
 dotnet run
 ```

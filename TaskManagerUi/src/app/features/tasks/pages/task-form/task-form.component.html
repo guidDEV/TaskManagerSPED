@@ -1,0 +1,84 @@
+
+
+
+<div class="container-fluid">
+
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+
+      <div class="card shadow border-0">
+
+        <!-- HEADER -->
+        <div class="card-header bg-white d-flex justify-content-between align-items-center">
+          <h5 class="mb-0">
+            {{ isEdit ? '✏️ Edit Task' : '➕ New Task' }}
+          </h5>
+        </div>
+
+        <!-- BODY -->
+        <div class="card-body">
+
+          <!-- TITLE -->
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              [(ngModel)]="task.title"
+              placeholder="Enter task title" />
+          </div>
+
+          <!-- DESCRIPTION -->
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Description</label>
+            <textarea
+              rows="4"
+              class="form-control"
+              [(ngModel)]="task.description"
+              placeholder="Describe the task">
+            </textarea>
+          </div>
+
+          <!-- STATUS -->
+          <div class="mb-4">
+            <label class="form-label fw-semibold">Status</label>
+
+            <select
+              class="form-select"
+              [(ngModel)]="task.status">
+
+              <option *ngFor="let s of statuses" [value]="s">
+                {{ s }}
+              </option>
+
+            </select>
+          </div>
+
+          <!-- ACTIONS -->
+          <div class="d-flex justify-content-end gap-2">
+
+            <button
+              class="btn btn-light border"
+              type="button"
+              (click)="cancel()">
+              Cancel
+            </button>
+
+            <button
+              class="btn btn-primary"
+              type="button"
+              (click)="save()">
+
+              {{ isEdit ? 'Update' : 'Create' }}
+
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

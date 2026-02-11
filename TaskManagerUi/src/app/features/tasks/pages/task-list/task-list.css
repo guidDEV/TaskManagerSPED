@@ -1,0 +1,102 @@
+/* ===== Container geral ===== */
+:host {
+  display: block;
+  padding: 24px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+
+/* ===== Header ===== */
+h4 {
+  font-weight: 600;
+  color: #1e293b;
+  letter-spacing: 0.3px;
+}
+
+
+/* botão New Task */
+.btn-primary {
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 8px 14px;
+  transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+
+/* ===== Card da tabela ===== */
+.card {
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ===== Tabela ===== */
+table {
+  font-size: 14px;
+}
+
+
+/* Cabeçalho */
+thead th {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #64748b;
+  background: #f8fafc !important;
+  letter-spacing: 0.4px;
+  padding: 14px 16px;
+}
+
+
+/* Linhas */
+tbody td {
+  padding: 14px 16px;
+  vertical-align: middle;
+  border-color: #f1f5f9 !important;
+  color: #334155;
+}
+
+
+/* Hover elegante */
+tbody tr {
+  transition: background 0.15s ease;
+}
+
+tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+
+/* descrição */
+.text-muted {
+  color: #94a3b8 !important;
+  font-size: 13px;
+}
+
+
+/* ===== Estado vazio ===== */
+tbody tr td.text-center {
+  padding: 40px !important;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+
+/* ===== Responsividade ===== */
+.table-responsive {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+
+/* ===== Espaçamento entre header e tabela ===== */
+.container-fluid > .card {
+  margin-top: 12px;
+}

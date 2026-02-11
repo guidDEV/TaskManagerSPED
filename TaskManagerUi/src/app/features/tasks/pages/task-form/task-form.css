@@ -1,0 +1,120 @@
+/* ===== Fundo da página ===== */
+:host {
+  display: block;
+  min-height: 100vh;
+  padding: 32px 16px;
+  background: #f5f7fb;
+}
+
+
+/* ===== Card principal ===== */
+.card {
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+
+/* ===== Header ===== */
+.card-header {
+  border-bottom: 1px solid #eef2f7;
+  padding: 18px 22px;
+}
+
+.card-header h5 {
+  font-weight: 600;
+  color: #1e293b;
+  letter-spacing: 0.3px;
+}
+
+
+/* ===== Body ===== */
+.card-body {
+  padding: 26px;
+}
+
+
+/* ===== Labels ===== */
+.form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 6px;
+}
+
+
+/* ===== Inputs / textarea / select ===== */
+.form-control,
+.form-select {
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  padding: 10px 12px;
+  font-size: 14px;
+  transition: all 0.15s ease;
+  background: #ffffff;
+}
+
+
+/* foco moderno */
+.form-control:focus,
+.form-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+
+/* textarea resize bonito */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+
+/* ===== Espaçamento dos campos ===== */
+.mb-3,
+.mb-4 {
+  margin-bottom: 18px !important;
+}
+
+
+/* ===== Botões ===== */
+.btn {
+  border-radius: 10px;
+  font-weight: 500;
+  padding: 8px 16px;
+  transition: all 0.15s ease;
+}
+
+
+/* Cancel */
+.btn-light {
+  background: #f1f5f9;
+}
+
+.btn-light:hover {
+  background: #e2e8f0;
+}
+
+
+/* Primary */
+.btn-primary {
+  background: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.25);
+}
+
+
+/* ===== Centralização vertical opcional em telas grandes ===== */
+@media (min-width: 992px) {
+  .row {
+    min-height: 80vh;
+    align-items: center;
+  }
+}

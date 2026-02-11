@@ -1,0 +1,48 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+
+  border-radius: 999px; /* pill */
+
+  letter-spacing: 0.3px;
+  transition: all 0.15s ease-in-out;
+}
+
+/* cores mais modernas que o bootstrap puro */
+.bg-secondary {
+  background-color: #6c757d !important;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+}
+
+.bg-success {
+  background-color: #198754 !important;
+}
+
+.bg-light {
+  background-color: #e9ecef !important;
+}
+
+/* hover suave estilo dashboard */
+.badge:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  cursor: default;
+}
+
+/* texto mais legível */
+.badge.text-dark {
+  color: #333;
+}
+
+/* animação opcional */
+.badge {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}

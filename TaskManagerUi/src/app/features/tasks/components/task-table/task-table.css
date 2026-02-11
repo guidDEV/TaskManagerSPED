@@ -1,0 +1,121 @@
+:host {
+  display: block;
+}
+
+
+/* ===== Card/Table container ===== */
+.table {
+  border-radius: 14px;
+  overflow: hidden;
+  border: none;
+  font-size: 14px;
+}
+
+
+/* ===== Header ===== */
+thead {
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+thead th {
+  font-weight: 600;
+  color: #475569;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding: 14px 16px;
+}
+
+
+/* ===== Rows ===== */
+tbody tr {
+  transition: all 0.15s ease;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+
+/* hover moderno */
+tbody tr:hover {
+  background: #f9fbff;
+  transform: scale(1.002);
+}
+
+
+/* ===== Cells ===== */
+td {
+  padding: 14px 16px;
+  vertical-align: middle;
+  color: #334155;
+}
+
+
+/* título mais forte */
+td:first-child {
+  font-weight: 500;
+  color: #0f172a;
+}
+
+
+/* coluna actions alinhada */
+td:last-child {
+  white-space: nowrap;
+}
+
+
+/* ===== Botões ===== */
+.btn-sm {
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 5px 10px;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+
+/* Edit (warning moderno) */
+.btn-warning {
+  background: #fbbf24;
+  border: none;
+  color: #1e293b;
+}
+
+.btn-warning:hover {
+  background: #f59e0b;
+  transform: translateY(-1px);
+}
+
+
+/* Delete (danger moderno) */
+.btn-danger {
+  background: #ef4444;
+  border: none;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+
+/* ===== Sombra do container ===== */
+.shadow {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06) !important;
+}
+
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .table {
+    font-size: 13px;
+  }
+
+  td,
+  th {
+    padding: 10px;
+  }
+
+  .btn-sm {
+    padding: 4px 8px;
+  }
+}

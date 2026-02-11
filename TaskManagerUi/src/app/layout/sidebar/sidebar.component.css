@@ -7,12 +7,10 @@
   top: 0;
 }
 
-/* logo */
 .logo {
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-/* links */
 .nav-link {
   color: #cbd5e1;
   border-radius: 8px;
@@ -29,7 +27,6 @@
   color: white;
 }
 
-/* active route */
 .nav-link.active {
   background: #2563eb;
   color: white;

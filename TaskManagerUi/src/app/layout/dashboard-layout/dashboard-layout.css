@@ -1,4 +1,3 @@
-/* layout raiz */
 .layout {
   display: flex;
   height: 100vh;
@@ -7,7 +6,6 @@
   background-color: #f5f7fb;
 }
 
-/* área da direita (header + páginas) */
 .content-area {
   display: flex;
   flex-direction: column;
@@ -15,7 +13,6 @@
   min-width: 0;
 }
 
-/* conteúdo principal */
 .page-content {
   flex: 1;
   overflow-y: auto;
@@ -25,7 +22,6 @@
   background-color: #f8f9fa;
 }
 
-/* scroll bonito */
 .page-content::-webkit-scrollbar {
   width: 8px;
 }
@@ -35,19 +31,16 @@
   border-radius: 6px;
 }
 
-/* separação visual do sidebar */
 app-sidebar {
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
   z-index: 10;
 }
 
-/* header sombra leve */
 app-header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   z-index: 5;
 }
 
-/* responsivo */
 @media (max-width: 768px) {
   .layout {
     flex-direction: column;
